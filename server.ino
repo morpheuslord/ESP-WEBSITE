@@ -27,7 +27,7 @@ unsigned long previousTime = 0;
 const long timeoutTime = 2000;
 
 // Define Authentication
-const char* base64Encoding = "TWlzaE1hc2hMYWJzOm1pc2htYXNo";  // base64encoding user:pass - "dXNlcjpwYXNz", MishMashLabs:mishmash - "TWlzaE1hc2hMYWJzOm1pc2htYXNo"
+const char* base64Encoding = "c2VydmVyOnBhc3N3b3Jk";
 
 
 void setup() {
