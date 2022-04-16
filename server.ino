@@ -2,8 +2,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "TP-LINK_EE16";
-const char* password = "Wifi@290499";
+const char* ssid = "<<YOUR WIFI SSID>>";
+const char* password = "<<YOUR WIFI PASSWORD>>";
 
 // Set web server port number to 80
 WiFiServer server(80);
