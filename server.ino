@@ -2,8 +2,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "ESP32_NAT_Router";
-const char* password = "ServerPassword@1312";
+const char* ssid = "<<YOUR AP>>";
+const char* password = "<<AP PASSWORD>>";
 
 // Set web server port number to 80
 WiFiServer server(80);
