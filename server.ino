@@ -2,8 +2,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "<<YOUR WIFI SSID>>";
-const char* password = "<<YOUR WIFI PASSWORD>>";
+const char* ssid = "<<Your AP>>";
+const char* password = "<<Your Password>>";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -27,7 +27,7 @@ unsigned long previousTime = 0;
 const long timeoutTime = 2000;
 
 // Define Authentication
-const char* base64Encoding = "c2VydmVyOnBhc3N3b3Jk";
+const char* base64Encoding = "c2VydmVyOnBhc3N3b3Jk"; 
 
 
 void setup() {
@@ -144,7 +144,7 @@ void loop(){
               // Web Page Heading
 
               client.println("<div id='loading'><div id='spinner'></div></div><div id='header' class='animated slideInDown' style='animation-delay:1s;'><div id='title'></div><br><div id='links'><a href='#about'>about </a><a href='#skills'>skills</a><a href='#work' style='margin:0px 60px;'>works</a><a href='#contact'>contact</a></div></div>");
-              client.println("<body><center><div id='middle'><div class='text-change-container'><div class='text-change'></div></div><div class='text-change-container'><div class='text-change'></div></div><div id='tagline' class='animated zoomIn' style='animation-delay:1s;'>Welcome to my Website.<br><button class='btn_one'>Nothing Risky over here.</button></div> </div></center>");
+              client.println("<body><center><div id='middle'><div class='text-change-container'><div class='text-change'></div></div><div class='text-change-container'><div class='text-change'></div></div><div id='tagline' class='animated zoomIn' style='animation-delay:1s;'>Welcome to my ESP WebPage.<br><button class='btn_one'>Nothing Risky over here.</button></div> </div></center>");
               client.println("<div id='portfolio'><div id='about'><h1>About.</h1><div>");
               client.println("<p>");
               client.println("I am a intermediate level hacker, programmer and a blogger I really enjoy hacking and learning the complicated things involved in it I am a white hat hacker not intrested in doing black hat stuff and intrested in growing my knowledge in all possible ways. I learnt all my hacking and my basic skills from online resources mainly youtube and to gain a more indepth understanding on what happens in a industry or what does a Black hat hacker does to gain unauthorized access to your machine I need to learn more and gain more knowledge thats why I left my initial plans in commerce and persuied my dreames on being a hacker i joined Jain Demeed to be university in BCA and I am  currently studying to increase my knowledge.");
