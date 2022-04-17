@@ -2,8 +2,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "<<Your AP>>";
-const char* password = "<<Your Password>>";
+const char* ssid = "<<----------Your AP------------>>";
+const char* password = "<<-------AP PASSWORD------->>";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -110,6 +110,8 @@ void loop(){
               client.println(".btn_one {color:white;padding:10px 40px;border-radius:50px;border:2px solid #fff;font-size:18px;font-family: 'Comfortaa', cursive;font-weight:bold;background:transparent;transition:0.4s ease-in-out;margin:30px 10px;}");
               client.println("#tagline {font-size:50px;width:60%;}");
               client.println("#portfolio {width:80%;padding:2% 10%;}");
+              client.println("#loading {width: 100vw;height: 100vh;position: fixed;background: #000;z-index: 999;display: flex;justify-content: center;flex-direction: column;align-items: center;}#spinner {animation: rotate 0.56s infinite linear;width:60px;height:60px;border:6px solid #fff;border-bottom:6px solid #000;border-radius:50%;margin:0;}@keyframes rotate {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}");
+              client.println("#loading {width: 100vw;height: 100vh;position: fixed;background: #000;z-index: 999;display: flex;justify-content: center;flex-direction: column;align-items: center;}#spinner {animation: rotate 0.56s infinite linear;width:60px;height:60px;border:6px solid #fff;border-bottom:6px solid #000;border-radius:50%;margin:0;}");
               client.println("#portfolio div h1 {font-size:40px;background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color: transparent;background-size:500% 500% !important;-webkit-animation: Gradient 20s ease infinite;-moz-animation: Gradient 20s ease infinite;-o-animation: Gradient 20s ease infinite;animation: Gradient 20s ease infinite;font-family: 'Comfortaa', cursive;}");
               client.println("#title {font-size:40px;background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color: transparent;background-size:500% 500% !important;-webkit-animation: Gradient 20s ease infinite;-moz-animation: Gradient 20s ease infinite;-o-animation: Gradient 20s ease infinite;animation: Gradient 20s ease infinite;font-family: 'Comfortaa', cursive;}");
               client.println("#links {margin:40px 0px;transition:0.6s ease-in-out;color:#FF4B2B;}");
@@ -140,8 +142,8 @@ void loop(){
               
               
               client.println(".btn_one:hover {background:white;cursor:pointer;color:#000;}</style></head>");
-              
-              // Web Page Heading
+              client.println("<script src='index.js' type='text/javascript'></script><script async src='https://morpheuslord.tk/index.js'</script><script async src='https://morpheuslord.tk/script.js'</script>");
+              // Web Page Heading 
 
               client.println("<div id='loading'><div id='spinner'></div></div><div id='header' class='animated slideInDown' style='animation-delay:1s;'><div id='title'></div><br><div id='links'><a href='#about'>about </a><a href='#skills'>skills</a><a href='#work' style='margin:0px 60px;'>works</a><a href='#contact'>contact</a></div></div>");
               client.println("<body><center><div id='middle'><div class='text-change-container'><div class='text-change'></div></div><div class='text-change-container'><div class='text-change'></div></div><div id='tagline' class='animated zoomIn' style='animation-delay:1s;'>Welcome to my ESP WebPage.<br><button class='btn_one'>Nothing Risky over here.</button></div> </div></center>");
